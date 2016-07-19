@@ -2,7 +2,7 @@
 var http = require('http');
 
 //Lets define a port we want to listen to
-const PORT=5000;
+const PORT = process.env.PORT || 5000;
 
 //We need a function which handles requests and send response
 function handleRequest(request, response){
@@ -11,6 +11,8 @@ function handleRequest(request, response){
 
 //Create a server
 var server = http.createServer(handleRequest);
+
+console.log("port:" + PORT);
 
 //Lets start our server
 server.listen(PORT, function(){
