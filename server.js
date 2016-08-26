@@ -59,6 +59,18 @@ var cal = 'BEGIN:VCALENDAR\n' +
 'END:VEVENT\n' +
 'END:VCALENDAR';
 
+cal = '' +
+'BEGIN:VCALENDAR\n' +
+'VERSION:2.0\n' +
+'PRODID:-//Asana//NONSGML Asana//EN\n' +
+'X-PUBLISHED-TTL:PT1H\n' +
+'X-ORIGINAL-URL:https://app.fiscalnote.com/api/v1/external_calendars?url=3da42a299c9913b2b630c7b8c6867ce7\n' +
+'CALSCALE:GREGORIAN\n' +
+'METHOD:PUBLISH\n' +
+'X-WR-CALNAME:My Tasks in FiscalNote (via Asana)\n' +
+'END:VCALENDAR';
+
+
 //Lets define a port we want to listen to
 const PORT = process.env.PORT || 5000;
 
